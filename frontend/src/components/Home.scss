@@ -1,0 +1,22 @@
+.home-container {
+  background: rgb(255,43,133);
+  background: linear-gradient(42deg, rgba(255,43,133,1) 0%, rgba(255,0,52,1) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: calc(100vh - 68px);
+  text-align: center;
+  color: white;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.flickering-cursor {
+  animation: blink 1s infinite steps(1);
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
