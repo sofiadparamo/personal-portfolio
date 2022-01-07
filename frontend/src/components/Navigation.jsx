@@ -4,7 +4,7 @@ import Twemoji from "./Twemoji";
 
 const Navigation = () => {
     return(
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" className={"navbar-element"}>
             <Container fluid>
                 <Navbar.Brand href="/" className={"branding"}>
                     <Twemoji emoji={"🌸"} size={45}/>

@@ -1,7 +1,13 @@
 $margin-sides: 50px;
 
+.navbar-element {
+  height: 68px;
+  padding: 8px 0;
+}
+
 .nav-buttons {
   font-size: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .buttons-container {
@@ -10,6 +16,7 @@ $margin-sides: 50px;
 
 .brand-name-text {
   font-size: 1.5rem;
+  font-family: 'Source Code Pro', monospace;
 }
 
 .branding {
