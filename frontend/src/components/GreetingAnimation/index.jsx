@@ -54,7 +54,7 @@ const GreetingAnimation = () => {
     }, [ticks, currentText, currentLine, pauseTime, breakLine]);
 
     return(
-        <h1 id={"title-anim"}>
+        <h1 className={"title-anim"}>
             {currentText}<span className={"flickering-cursor"}>|</span>
         </h1>
     );

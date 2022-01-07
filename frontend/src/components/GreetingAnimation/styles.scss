@@ -2,6 +2,12 @@
   animation: blink 1s infinite steps(1);
 }
 
+.title-anim{
+  font-family: 'Source Code Pro', monospace;
+  font-size: 3em;
+  text-align: left;
+}
+
 @keyframes blink {
   0% { opacity: 1; }
   50% { opacity: 0; }
