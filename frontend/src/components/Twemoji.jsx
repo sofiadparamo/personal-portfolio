@@ -7,7 +7,7 @@ let Twemoji = (props) => {
             height={props.size}
             width={props.size}
             alt={props.emoji}
-            style={{marginTop: "-5%"}}
+            style={{marginTop: "-5px"}}
         />
     )
 }
