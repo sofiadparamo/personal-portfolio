@@ -1,61 +1,55 @@
 import './styles.scss';
 import data from './messages';
 import {useEffect, useState} from "react";
+import Twemoji from "../Twemoji";
 
 const GreetingAnimation = () => {
 
     let [currentText, setCurrentText] = useState('');
-    let [ticks, setTicks] = useState(0);
-    let [currentLine, setCurrentLine] = useState(0);
-    let [pauseTime, setPauseTime] = useState(0);
-    let [breakLine, setBreakLine] = useState(false);
+    let [emoji, setEmoji] = useState((<></>));
+
+    let sleep = (ms) => {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    };
+
 
     useEffect(() => {
-        const interval = setInterval(() =>{
-            if(pauseTime > 0){
-                setPauseTime(pauseTime - 1);
-                return;
-            } else if(currentLine !== data.messages.length -1 && breakLine){
-                setCurrentText(data.messages[0].text);
-                setCurrentLine(currentLine + 1);
-                setTicks(0);
-                setBreakLine(false);
-                return;
-            }
-
-            let nextIncrease = 1;
-
-            if(ticks < data.messages[currentLine].text.length) {
-                let newValue = currentText;
-                if(data.messages[currentLine].text[ticks] === ' '){
-                    newValue += ' ';
-                    nextIncrease = 2;
-                }
-
-                setCurrentText(newValue + data.messages[currentLine].text[ticks + nextIncrease - 1]);
-                setTicks(ticks + nextIncrease);
-            } else {
-                if(currentLine !== 0){
-                    setCurrentText(currentText + data.messages[currentLine].emoji);
-                    if(currentLine === data.messages.length - 1){
-                        console.log("Trying to clear interval" + interval)
-                        clearTimeout(interval);
+        let animation = async () => {
+            let currentTextLocal = '';
+            for(let i = 0; i < data.messages.length; i++){
+                if(i === 0){
+                    for(let j = 0; j < data.messages[i].text.length; j++){
+                        currentTextLocal += data.messages[i].text[j];
+                        setCurrentText(currentTextLocal);
+                        await sleep(50);
                     }
-                    setPauseTime(5);
+                }else{
+                    for(let j = 0; j < data.messages[i].text.length; j++){
+                        currentTextLocal += data.messages[i].text[j];
+                        setCurrentText(currentTextLocal);
+                        await sleep(50);
+                    }
+                    setEmoji((<Twemoji emoji={data.messages[i].emoji} size={"40px"}/>))
                 }
-                setBreakLine(true);
+                if(i !== 0){
+                    await sleep(3000);
+                }
+                if(i !== data.messages.length - 1){
+                    console.log('Cleared text');
+                    currentTextLocal = data.messages[0].text;
+                    setCurrentText(currentTextLocal);
+                    setEmoji((<></>))
+                }
             }
-
-        }, 70);
-
-        return () => {
-            clearInterval(interval);
         };
-    }, [ticks, currentText, currentLine, pauseTime, breakLine]);
+
+        console.log('Start animation');
+        animation().then(() => console.log("Finish animation"));
+    }, []);
 
     return(
         <h1 className={"title-anim"}>
-            {currentText}<span className={"flickering-cursor"}>|</span>
+            {currentText}{emoji}<span className={"flickering-cursor"}>|</span>
         </h1>
     );
 }
