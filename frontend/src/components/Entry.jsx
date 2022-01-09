@@ -26,31 +26,14 @@ const Entry = (props) => {
         }
     }
 
-    let livePreview = () => {
-        if(props.live){
-            return (
-                <iframe
-                    title={"Live preview for pedagog website"}
-                    src={props.image}
-                    className={"entry-image iframe-demo"}
-                    style={{width: "200%", height: "200%"}}
-                />
-            );
-        } else {
-            return (
+    return(
+        <div className={"entry-container"}>
+            <div className={"entry-image-container"}>
                 <Image
                     className={"entry-image"}
                     src={props.image}
                     alt={props.title + " project image"}
                 />
-            );
-        }
-    }
-
-    return(
-        <div className={"entry-container"}>
-            <div className={"entry-image-container"}>
-                {livePreview()}
             </div>
             <div className={"entry-description-container"}>
                 <h1 className={"entry-title"}>{props.title}</h1>
@@ -60,6 +43,9 @@ const Entry = (props) => {
                 <div className={"button-container"}>
                     {demoButton()}
                     {codeButton()}
+                    <Button className={"entry-button"} href={props.id}>
+                        Learn More
+                    </Button>
                 </div>
             </div>
         </div>
