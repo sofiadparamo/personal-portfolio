@@ -14,5 +14,15 @@
 .title-anim-container{
   margin-top: calc(70vh - 68px);
   margin-left: 20px;
+  z-index: 100;
+}
+
+.particles {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 68px);
+  z-index: 0;
 }
 
