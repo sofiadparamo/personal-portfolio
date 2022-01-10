@@ -28,4 +28,4 @@ jobs:
       - name: Deploy to Server
         run: ssh server 'cd ${{ secrets.PROJECT_ROOT }} && git fetch && git reset --hard origin/main && cd frontend && rm -rf build/ && npm i && npm run build && sudo rm -rf ${{ secrets.PROJECT_PROD }}* && sudo cp -r build/* ${{ secrets.PROJECT_PROD }} && sudo systemctl restart nginx'
       - name: Test production build
-        run: curl https://$SSH_IP/
+        run: curl https://${{ secrets.SSH_IP }}/
