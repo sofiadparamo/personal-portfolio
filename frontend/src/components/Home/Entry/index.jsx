@@ -43,7 +43,7 @@ const Entry = (props) => {
                 <div className={"button-container"}>
                     {demoButton()}
                     {codeButton()}
-                    <Button className={"entry-button"} href={props.id}>
+                    <Button className={"entry-button"} href={`/projects/${props.id}`}>
                         Learn More
                     </Button>
                 </div>

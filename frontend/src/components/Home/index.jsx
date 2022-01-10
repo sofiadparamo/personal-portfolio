@@ -11,6 +11,7 @@ let Home = () => {
                 <Entry
                     title={"HiTec Student Groups Quiz"}
                     description={"A web quiz for first-year students to meet the student groups at the university."}
+                    code={"https://github.com/TECoding/hitec-2021"}
                     image={"images/hitec.png"}
                     id={"hitec"}
                 />
