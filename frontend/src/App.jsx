@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Home from "./components/Home";
 import Title from "./components/Title";
 import Entry from "./components/Entry";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
                 id={"opencv"}
             />
         </div>
+        <Footer/>
     </div>
   );
 }
