@@ -48,7 +48,7 @@ const GreetingAnimation = () => {
     }, []);
 
     return(
-        <h1 className={"title-anim"}>
+        <h1 className={"title-anim"} translate="no">
             {currentText}{emoji}<span className={"flickering-cursor"}>|</span>
         </h1>
     );
