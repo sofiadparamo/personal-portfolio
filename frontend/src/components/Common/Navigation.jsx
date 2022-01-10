@@ -16,8 +16,21 @@ const Navigation = () => {
                         <Nav.Link href="/" className={"nav-buttons"}>Home</Nav.Link>
                         <Nav.Link href="/#work" className={"nav-buttons"}>Work</Nav.Link>
 
-                        <Nav.Link href="/about" className={"nav-buttons"} disabled>About</Nav.Link>
-                        <Nav.Link href="/about#contact" className={"nav-buttons"} disabled>Contact</Nav.Link>
+                        <Nav.Link
+                            /*href="/about"*/
+                            className={"nav-buttons coming-soon"}
+                        >
+                            About
+                            <span className="coming-soon-tooltip">Coming soon... WIP</span>
+                        </Nav.Link>
+
+                        <Nav.Link
+                            /*href="/about#contact"*/
+                            className={"nav-buttons coming-soon"}
+                        >
+                            Contact
+                            <span className="coming-soon-tooltip">Coming soon... WIP</span>
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
