@@ -3,11 +3,14 @@ import { useParams } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import data from "./data";
 import {Badge, Image} from "react-bootstrap";
-import {useEffect} from "react";
 
 let ProjectPage = () => {
 
     let params = useParams();
+
+    if(!data.projects[params.id]) {
+        window.location.href = "/";
+    }
 
     let github = () => {
         if(data.projects[params.id].github){
@@ -24,12 +27,6 @@ let ProjectPage = () => {
 
 
     }
-
-    useEffect(() => {
-        if(!data.projects[params.id]) {
-            window.location.href = "/";
-        }
-    }, [params.id]);
 
     return(
         <div className={"project-page-container"}>
