@@ -19,3 +19,20 @@
   font-size: 0.8em;
   background: #01070f;
 }
+
+.footer-social {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.discord:hover {
+  color: #6371fe;
+}
+
+.twitter:hover {
+  color: #1d9bf0;
+}
+
+.github:hover {
+  color: #888;
+}
