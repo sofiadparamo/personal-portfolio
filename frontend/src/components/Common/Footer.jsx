@@ -1,6 +1,6 @@
 import './Footer.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {Button, CloseButton, OverlayTrigger, Popover} from "react-bootstrap";
+import {Button, OverlayTrigger, Popover} from "react-bootstrap";
 
 let Footer = () => {
     const onDiscordClick = (event) => {
