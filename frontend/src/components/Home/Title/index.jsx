@@ -1,4 +1,4 @@
-import './Title.scss';
+import './styles.scss';
 
 let Title = (props) => {
 

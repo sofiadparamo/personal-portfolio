@@ -1,4 +1,4 @@
-import './Entry.scss';
+import './styles.scss';
 import {Button, Image} from "react-bootstrap";
 
 const Entry = (props) => {

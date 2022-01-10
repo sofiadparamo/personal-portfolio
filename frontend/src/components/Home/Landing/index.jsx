@@ -1,8 +1,8 @@
-import './Home.scss'
-import GreetingAnimation from "./GreetingAnimation";
+import './styles.scss'
+import GreetingAnimation from "../../GreetingAnimation";
 import Particles from "react-tsparticles";
 
-const Home = () => {
+const Landing = () => {
 
     const particlesInit = (main) => {
         console.log(main);
@@ -83,4 +83,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Landing;
