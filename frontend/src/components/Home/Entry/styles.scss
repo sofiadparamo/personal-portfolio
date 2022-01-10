@@ -1,0 +1,68 @@
+.entry-container{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.entry-image-container{
+  width: 35%;
+  text-align: center;
+  margin: 0 auto 20px;
+}
+
+.entry-image {
+  width: 100%;
+  border-radius: 0.7rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.entry-image:hover {
+  transform: scale(1.02);
+}
+
+.entry-description-container {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.entry-title {
+  margin-top: 10px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 28px;
+  color: black;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.entry-description{
+  width: 100%;
+  padding: 0 25px;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.entry-button {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .entry-container{
+    width: 100%;
+  }
+
+  .entry-image-container{
+    width: 100%;
+  }
+
+  .entry-image{
+    border-radius: 0;
+  }
+
+  .entry-description-container {
+    width: 100%;
+  }
+
+}

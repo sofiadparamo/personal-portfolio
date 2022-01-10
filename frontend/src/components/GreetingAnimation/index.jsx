@@ -1,7 +1,7 @@
 import './styles.scss';
 import data from './messages';
 import {useEffect, useState} from "react";
-import Twemoji from "../Twemoji";
+import Twemoji from "../Common/Twemoji";
 
 const GreetingAnimation = () => {
 

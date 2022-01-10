@@ -1,0 +1,45 @@
+.project-page-container{
+  width: 100%;
+  background: rgb(22,194,222);
+  background: linear-gradient(45deg, rgba(22,194,222,1) 0%, rgba(244,51,163,1) 100%);
+  font-family: 'Source Code Pro', monospace;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.project-page-container h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.project-page-content{
+  width: 50%;
+  margin: 20px auto;
+  background: white;
+  color: #000;
+  padding: 20px;
+  font-family: Raleway, sans-serif;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 3px;
+}
+
+.project-page-image {
+  width: 50%;
+}
+
+.project-page-container a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-page-container a:hover {
+  color: #ddd;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .project-page-image {
+    width: 100%;
+  }
+}
