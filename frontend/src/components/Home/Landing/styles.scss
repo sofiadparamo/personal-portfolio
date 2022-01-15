@@ -12,9 +12,11 @@
 }
 
 .title-anim-container{
-  margin-top: calc(70vh - 68px);
-  margin-left: 20px;
-  z-index: 100;
+  position:relative;
+  top: calc(70vh - 68px);
+  left: 20px;
+  width: calc(100% - 20px);
+  z-index: 1;
 }
 
 .particles {
