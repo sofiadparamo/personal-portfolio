@@ -4,7 +4,6 @@ $height: 200px;
 $font-size: 40px;
 
 .title-container {
-  height: $height;
   display: block;
   background: rgb(79,44,167);
   background: linear-gradient(315deg, rgba(79,44,167,1) 35%, rgba(0,212,255,1) 100%);
@@ -14,6 +13,7 @@ $font-size: 40px;
   font-family: 'JetBrains Mono', monospace;
   font-size: $font-size;
   color: white;
-  padding-top: math.div($height - $font-size, 2) - 4;
-  padding-bottom: math.div($height - $font-size, 2) - 4;
+  padding-top: 2 * $font-size;
+  padding-bottom: 2 * $font-size;
+  margin: 0;
 }
