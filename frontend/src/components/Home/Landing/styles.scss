@@ -28,3 +28,9 @@
   z-index: 0;
 }
 
+@media (max-width: 585px) {
+  .title-anim-container{
+    top: calc(60vh - 68px);
+  }
+}
+
