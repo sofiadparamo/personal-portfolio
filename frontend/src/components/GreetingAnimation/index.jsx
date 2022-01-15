@@ -44,7 +44,6 @@ const GreetingAnimation = () => {
             }
         };
 
-        console.log('Start animation');
         animation().then(() => console.log("Finish animation"));
     }, []);
 
