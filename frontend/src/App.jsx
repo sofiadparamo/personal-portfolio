@@ -17,14 +17,15 @@ function App() {
         return new Promise(resolve => setTimeout(resolve, ms));
     };
 
-    useEffect(async () => {
+    useEffect( () => {
         const loadingContainer = document.getElementById('loading-container');
         const loadingIcon = document.getElementById('loading-icon');
         loadingContainer.classList.add('loaded');
         loadingIcon.classList.add('loaded');
-        await sleep(1000);
-        loadingContainer.remove();
-        loadingIcon.remove();
+        sleep(1000).then(r => {
+            loadingContainer.remove();
+            loadingIcon.remove();
+        });
     }, [])
 
   return (
