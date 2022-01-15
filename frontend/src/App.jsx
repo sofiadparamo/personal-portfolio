@@ -1,4 +1,3 @@
-/* eslint-env browser */
 import './App.css';
 import {
     BrowserRouter as Router,
