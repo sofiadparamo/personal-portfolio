@@ -12,9 +12,11 @@
 }
 
 .title-anim-container{
-  margin-top: calc(70vh - 68px);
-  margin-left: 20px;
-  z-index: 100;
+  position:relative;
+  top: calc(70vh - 68px);
+  left: 20px;
+  width: calc(100% - 20px);
+  z-index: 1;
 }
 
 .particles {
@@ -24,5 +26,11 @@
   width: 100%;
   height: calc(100vh - 68px);
   z-index: 0;
+}
+
+@media (max-width: 585px) {
+  .title-anim-container{
+    top: calc(60vh - 68px);
+  }
 }
 

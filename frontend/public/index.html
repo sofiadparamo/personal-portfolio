@@ -38,6 +38,40 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
+
+      @keyframes rotation {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(359deg);
+        }
+      }
+
+      #loading-container{
+        position: fixed;
+        z-index: 200;
+        width: 100vw;
+        height: 100vh;
+        background: #ffffff;
+        padding-top: 45vh;
+        padding-left: calc(50vw - 5vh);
+        transition: background 1s ease-in-out;
+      }
+
+      #loading-icon {
+        height: 10vh;
+        width: 10vh;
+        animation: rotation 2s infinite linear;
+        background: url('%PUBLIC_URL%/logo512.png') no-repeat center;
+        background-size: 10vh 10vh;
+        transition: background 1s ease-in-out;
+      }
+
+      .loaded#loading-icon, .loaded#loading-container{
+        background: transparent;
+      }
+
     </style>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -48,6 +82,9 @@
     <!-- End Google Tag Manager -->
   </head>
   <body>
+    <div id="loading-container">
+      <div id="loading-icon"></div>
+    </div>
   <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K83K5LQ"
                       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

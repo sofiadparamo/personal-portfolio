@@ -15,6 +15,7 @@ const GreetingAnimation = () => {
 
     useEffect(() => {
         let animation = async () => {
+            await sleep(1000);
             let currentTextLocal = '';
             for(let i = 0; i < data.messages.length; i++){
                 if(i === 0){
@@ -43,7 +44,6 @@ const GreetingAnimation = () => {
             }
         };
 
-        console.log('Start animation');
         animation().then(() => console.log("Finish animation"));
     }, []);
 
