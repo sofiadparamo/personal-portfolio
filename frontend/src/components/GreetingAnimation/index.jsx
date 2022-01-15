@@ -15,6 +15,7 @@ const GreetingAnimation = () => {
 
     useEffect(() => {
         let animation = async () => {
+            await sleep(1000);
             let currentTextLocal = '';
             for(let i = 0; i < data.messages.length; i++){
                 if(i === 0){
