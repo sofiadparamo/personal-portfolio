@@ -9,8 +9,24 @@ import Footer from "./components/Common/Footer";
 import Home from "./components/Home";
 import ProjectPage from "./components/ProjectPage";
 import Title from "./components/Home/Title";
+import {useEffect} from "react";
 
 function App() {
+
+    let sleep = (ms) => {
+        return new Promise(resolve => setTimeout(resolve, ms));
+    };
+
+    useEffect(async () => {
+        const loadingContainer = document.getElementById('loading-container');
+        const loadingIcon = document.getElementById('loading-icon');
+        loadingContainer.classList.add('loaded');
+        loadingIcon.classList.add('loaded');
+        await sleep(1000);
+        loadingContainer.remove();
+        loadingIcon.remove();
+    }, [])
+
   return (
     <Router>
         <div className="App">
