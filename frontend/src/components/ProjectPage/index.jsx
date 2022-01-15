@@ -42,7 +42,7 @@ let ProjectPage = () => {
                     {skill}
                 </Badge>
             ))}
-            <p className={"project-page-content project-page-description"}>{data.projects[params.id].description}</p>
+            <p className={"project-page-content"}>{data.projects[params.id].description}</p>
             {github()}
         </div>
     );
