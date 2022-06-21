@@ -9,6 +9,19 @@ let Home = () => {
             <Title title={"Projects I've Worked On"}/>
             <div className={"entries-container"} id={"work"}>
                 <Entry
+                    title={"Labor Expenses Recovery Tool"}
+                    description={"A tool developed for the IBM management teams to administrate the expenses and resources of a project. The tool has a very complex architecture and its development was as close to a comercial software as possible."}
+                    image={"images/lert.png"}
+                    id={"lert"}
+
+                />
+                <Entry 
+                    title={"ITESM Classroom reservation system"}
+                    description={"A system for the scholar team to manage the classrooms and their reservations allowing them to book and organize schedules in a matter of seconds, avoiding conflicts between reservations."}
+                    image={"images/itesm.png"}
+                    id={"reservationsystem"}
+                />
+                <Entry
                     title={"HiTec Student Groups Quiz"}
                     description={"A web quiz for first-year students to meet the student groups at the university."}
                     code={"https://github.com/TECoding/hitec-2021"}
@@ -36,6 +49,9 @@ let Home = () => {
                     image={"https://github.com/SweetSofiMC/Convolution/raw/master/Examples/ui.gif"}
                     id={"opencv"}
                 />
+            </div>
+            <div className={"entries-container"} id={"work"}>
+                
             </div>
         </div>
     );

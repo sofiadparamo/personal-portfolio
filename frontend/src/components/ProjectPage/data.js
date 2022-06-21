@@ -1,5 +1,31 @@
 let data = {
     projects: {
+        lert:{
+            name: 'Labor Expenses Recovery Tool',
+            description: 'A tool to help IBM managers to adminstrate and track labor expenses derived from projects at the company. The projects was developed using NextJS with Chakra UI in React. It contains very complex own components in the UI and extends beyond the UI components provided by Chakra UI. The backend of the project uses PostgreSQL and Flaks. The project is fully documented and fully tested. It contains a large portion of automation including tests, CI/CD, and deployment. The project is also fully accessible and responsive. The architecture allows an horizontal scaling and load balacing thanks to the proxy architecuture view. Also, the whole project was developed under SCRUM methodology, with 1 week sprints.',
+            date: 'February 2022-June 2022',
+            skills: ['React', 'NextJS', 'Chakra UI', 'Flask', 'PostgreSQL', 'GitHub Actions', 'Jest', 'Pytest', 'Newman', 'Docker', 'Scrum', 'Kubernetes', 'PostgreSQL', 'NGINX'],
+            media: [
+                {
+                    type: 'image',
+                    src: '/images/lert-arch.png',
+                    alt: 'Architecture diagram of the project'
+                },
+            ]
+        },
+        reservationsystem: {
+            title: 'Reservation System',
+            description: 'A reservation system for the ITESM Campus Guadalajara, that allows the user to make reservations for the rooms of the campus. It uses a fourth dimensional optimization algorithm to offer the best results in the fastest time possible. It receives rows of data and transforms them into clusters of information trees, which are accessed in memory inmediately, allowing to search for conflicts fast in an otherwise O(n^4) algorithm. It also offers a search engine that allows the user to search for rooms by name, capacity, or by type.',
+            date: 'August 2021-March 2022',
+            skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
+            media: [
+                {
+                    type: 'image',
+                    src: '/images/itesm.png',
+                    alt: 'Reservation system search page with parameters to search for rooms and services'
+                },
+            ]
+        },
         hitec: {
             title: 'HiTec Student Groups Quiz',
             description: 'I led the development of a quiz application for HiTec, a welcome event for new students in my university. I designed the architecture and structure of the App and organized the development tasks using GitHub projects. I also implemented CI/CD to speed up the development process by decreasing the time a branch review took from about an hour to just 5 to 15 minutes. The quiz is conformed by 10 question with a score associated with them, once you finish it, the app displays wich studen club matches the best with you. We also store feedback responses for the event and they\'re stored in Google Firestore. This app was a complete success and handled over 1000 requests on its launch day.',
