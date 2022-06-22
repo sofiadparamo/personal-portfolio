@@ -36,3 +36,11 @@
 .github:hover {
   color: #888;
 }
+
+.heart{
+  transition: color 0.3s ease;
+}
+
+.heart:hover {
+  color: #FF0000
+}

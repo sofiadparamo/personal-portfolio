@@ -17,11 +17,11 @@ let data = {
             title: 'Reservation System',
             description: 'A reservation system for the ITESM Campus Guadalajara, that allows the user to make reservations for the rooms of the campus. It uses a fourth dimensional optimization algorithm to offer the best results in the fastest time possible. It receives rows of data and transforms them into clusters of information trees, which are accessed in memory inmediately, allowing to search for conflicts fast in an otherwise O(n^4) algorithm. It also offers a search engine that allows the user to search for rooms by name, capacity, or by type.',
             date: 'August 2021-March 2022',
-            skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap'],
+            skills: ['React', 'Node.js', 'Express', 'MongoDB', 'Bootstrap', 'Advanced Algorithms'],
             media: [
                 {
                     type: 'image',
-                    src: '/images/itesm.png',
+                    src: '/images/reservation2.png',
                     alt: 'Reservation system search page with parameters to search for rooms and services'
                 },
             ]
@@ -52,6 +52,20 @@ let data = {
                     alt: 'Hiring Management App Dashboard screenshot'
                 }
             ]
+        },
+        endlessrunner: {
+            title: 'Endless Runner',
+            description: 'This project was developed for the videogames course. It was created using Unity with free assets. The game is a 2D platformer with procedural obstacle generation. There are collectibles that increase the score. The background also contains animation.',
+            date: 'February - May 2021',
+            skills: ["Unity 2D"],
+            media: [
+                {
+                    type: 'image',
+                    src: '/images/endlessrunner.png',
+                    alt: 'Endless Runner gameplay screenshot'
+                }
+            ]
+
         },
         pedagog: {
             title: 'Pedagog',
