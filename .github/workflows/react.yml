@@ -26,7 +26,7 @@ jobs:
 
       - name: Test build
         working-directory: frontend
-        run: npm run build
+        run: npm run buildci
 
       - name: Run tests
         working-directory: frontend

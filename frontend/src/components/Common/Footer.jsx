@@ -41,7 +41,7 @@ let Footer = () => {
                 </OverlayTrigger>
             </div>
             <div className={"signature"}>
-                Created with <FontAwesomeIcon icon={["fas","heart"]} size={"1x"}/> by SweetSofiMC. OpenSource on <a href="https://github.com/SweetSofiMC/personal-portfolio">GitHub</a>
+                Created with <FontAwesomeIcon icon={["fas","heart"]} className={"heart"} size={"1x"}/> by SweetSofiMC. OpenSource on <a href="https://github.com/SweetSofiMC/personal-portfolio">GitHub</a>
             </div>
         </footer>
     );
