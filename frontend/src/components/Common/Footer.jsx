@@ -28,7 +28,7 @@ let Footer = () => {
     return (
         <footer className="footer">
             <div className={"footer-container"}>
-                <a href={"https://twitter.com/SweetSofiMC/"} target={"_blank"} rel={"noreferrer"} className={"footer-social twitter"}>
+                <a href={"https://twitter.com/sofiadparamo/"} target={"_blank"} rel={"noreferrer"} className={"footer-social twitter"}>
                     <FontAwesomeIcon icon={["fab","twitter"]} size={"2x"} className={"social-distance"}/>
                 </a>
                 <a href={"https://github.com/SweetSofiMC/"} target={"_blank"} rel={"noreferrer"} className={"footer-social github"}>
