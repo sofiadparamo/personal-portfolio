@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Emoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f338.svg" width="100" />
+  <img alt="Emoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f338.svg" width="100" />
 </div>
 <h1 align="center">
   sweetsofimc.dev
