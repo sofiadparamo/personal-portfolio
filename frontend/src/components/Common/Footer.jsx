@@ -31,7 +31,7 @@ let Footer = () => {
                 <a href={"https://twitter.com/sofiadparamo/"} target={"_blank"} rel={"noreferrer"} className={"footer-social twitter"}>
                     <FontAwesomeIcon icon={["fab","twitter"]} size={"2x"} className={"social-distance"}/>
                 </a>
-                <a href={"https://github.com/SweetSofiMC/"} target={"_blank"} rel={"noreferrer"} className={"footer-social github"}>
+                <a href={"https://github.com/sofiadparamo"} target={"_blank"} rel={"noreferrer"} className={"footer-social github"}>
                     <FontAwesomeIcon icon={["fab","github"]} size={"2x"} className={"social-distance"}/>
                 </a>
                 <OverlayTrigger trigger="click" placement="right" overlay={popover}>
