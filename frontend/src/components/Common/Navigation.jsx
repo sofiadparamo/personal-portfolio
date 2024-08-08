@@ -7,7 +7,7 @@ const Navigation = () => {
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
             <Container>
                 <Navbar.Brand href="/">
-                    <Twemoji emoji={"🌸"} size={45}/>
+                    <Twemoji emoji={"🌸"} size={"45px"}/>
                     <span className={"brand-name-text"} translate={"no"}> SweetSofiMC</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
