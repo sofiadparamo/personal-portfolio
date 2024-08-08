@@ -1,33 +1,18 @@
 import {Image} from "react-bootstrap";
+import twemoji from '@twemoji/api';
 
 let Twemoji = (props) => {
 
-    let emojiValues = [];
-
-    for(let i = 0; i < 10; i++){
-        try{
-            let code = props.emoji.codePointAt(i).toString(16);
-            emojiValues.push(code);
-            if(code.length !== 4){
-                i++;
-            }
-        } catch(e){
-            break;
-        }
-    }
-
-    let emojiCode = emojiValues[0];
-
-    for(let i = 1; i < emojiValues.length; i++){
-        emojiCode += "-" + emojiValues[i];
-    }
+    let emojiCode = twemoji.parse(props.emoji, {folder: "svg", ext: ".svg"});
+    let parser = new DOMParser();
+    let doc = parser.parseFromString(emojiCode, 'text/html');
 
     return(
         <Image
-            src={`https://twemoji.maxcdn.com/v/latest/svg/${emojiCode}.svg`}
+            src={doc.querySelector('img').src}
+            alt={emojiCode}
             height={props.size}
             width={props.size}
-            alt={props.emoji}
             style={{marginTop: "-5px"}}
         />
     )
