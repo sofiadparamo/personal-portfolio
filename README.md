@@ -2,7 +2,7 @@
   <img alt="Emoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f338.svg" width="100" />
 </div>
 <h1 align="center">
-  sweetsofimc.dev
+  iamsofi.dev
 </h1>
 
 <p align="center">
@@ -16,11 +16,11 @@
 
 This project is my personal website/portfolio. It contains information about me and my projects.
 
-[![Demo image](.github/images/demo.png)](https://sweetsofimc.dev)
+[![Demo image](.github/images/demo.png)](https://iamsofi.dev)
 
 ## 📌 Project usage
 
-You are allowed fork this project as long as you keep the license and give credit for the work, not just claiming it as if it's yours.
+You are allowed fork this project as long as you keep the license and give credit for the work, do **not** claim it as yours.
 
 ## 🚀 Getting started
 
@@ -36,4 +36,4 @@ There is a data file under `src/components/ProjectPage/data.js`. You can edit it
 
 ### ✨ Editing greeting messages
 
-You can edit these messages under `src/components/GreetingAnimation/messages.js`
+You can edit these messages in `src/components/GreetingAnimation/messages.js`
