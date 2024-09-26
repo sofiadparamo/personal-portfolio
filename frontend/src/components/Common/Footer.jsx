@@ -8,14 +8,14 @@ let Footer = () => {
     }
 
     const onDiscordConfirmation = (event) => {
-        window.open("https://discord.sweetsofimc.dev/");
+        window.open("https://iamso.fi/discord");
     }
 
     const popover = (
         <Popover id="popover-basic">
             <Popover.Header as="h3">Warning</Popover.Header>
             <Popover.Body>
-                Personal content ahead! This is a <strong>personal space of mine</strong>, join at your own discretion.
+                Personal content ahead! This is a <strong>personal space</strong>, join at your own discretion.
                 <br/>
                 <Button size={"sm"} variant={"success"} onClick={onDiscordConfirmation}>Continue</Button>
                 <br/>
@@ -35,13 +35,13 @@ let Footer = () => {
                     <FontAwesomeIcon icon={["fab","github"]} size={"2x"} className={"social-distance"}/>
                 </a>
                 <OverlayTrigger trigger="click" placement="right" overlay={popover}>
-                    <a href={"https://discord.sweetsofimc.dev/"} target={"_blank"} rel={"noreferrer"} className={"footer-social discord"} onClick={onDiscordClick}>
+                    <a href={"https://iamso.fi/discord"} target={"_blank"} rel={"noreferrer"} className={"footer-social discord"} onClick={onDiscordClick}>
                         <FontAwesomeIcon icon={["fab","discord"]} size={"2x"}/>
                     </a>
                 </OverlayTrigger>
             </div>
             <div className={"signature"}>
-                Created with <FontAwesomeIcon icon={["fas","heart"]} className={"heart"} size={"1x"}/> by SweetSofiMC. OpenSource on <a href="https://github.com/SweetSofiMC/personal-portfolio">GitHub</a>
+                Created with <FontAwesomeIcon icon={["fas","heart"]} className={"heart"} size={"1x"}/> by SofiaDParamo. OpenSource on <a href="https://github.com/SofiaDParamo/personal-portfolio">GitHub</a>
             </div>
         </footer>
     );

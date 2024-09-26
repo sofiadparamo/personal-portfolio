@@ -8,7 +8,7 @@ const Navigation = () => {
             <Container>
                 <Navbar.Brand href="/">
                     <Twemoji emoji={"🌸"} size={"45px"}/>
-                    <span className={"brand-name-text"} translate={"no"}> SweetSofiMC</span>
+                    <span className={"brand-name-text"} translate={"no"}> SofiaDParamo</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className={"justify-content-end"}>

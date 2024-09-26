@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://portfolio.sweetsofimc.dev/",
+  "homepage": "https://iamsofi.dev/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
@@ -30,7 +30,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "echo portfolio.sweetsofimc.dev > ./build/CNAME && gh-pages -d build"
+    "deploy": "echo iamsofi.dev > ./build/CNAME && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
