@@ -47,7 +47,7 @@ let Home = () => {
                     description={"Educational platform powered with OpenAI for TreeHacks Stanford University Hackathon"}
                     demo={"https://www.youtube.com/watch?v=FovBurrPZOU"}
                     code={"https://github.com/ahiraaam/treehacks-pedagog"}
-                    image={"https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/396/000/datas/gallery.jpg"}
+                    image={"images/pedagog.jpg"}
                     id={"pedagog"}
                 />
                 <Entry

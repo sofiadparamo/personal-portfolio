@@ -3,6 +3,16 @@
   font-family: 'JetBrains Mono', monospace;
 }
 
+.hashlink-item {
+  color: rgba(0,0,0,0.6);
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out
+}
+
+.hashlink-item:hover {
+  color: rgba(0,0,0,0.8);
+}
+
 .brand-name-text {
   font-size: 1.5rem;
   font-family: 'JetBrains Mono', monospace;

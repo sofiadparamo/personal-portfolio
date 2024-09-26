@@ -1,4 +1,5 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
+import { HashLink } from 'react-router-hash-link';
 import './Navigation.scss';
 import Twemoji from "./Twemoji";
 
@@ -14,7 +15,7 @@ const Navigation = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className={"justify-content-end"}>
                     <Nav>
                         <Nav.Link href="/" className={"nav-buttons"}>Home</Nav.Link>
-                        <Nav.Link href="/#work" className={"nav-buttons"}>Work</Nav.Link>
+                        <Nav.Link className={"nav-buttons"}><HashLink to="/#work" className="hashlink-item">Work</HashLink></Nav.Link>
 
                         <Nav.Link
                             /*href="/about"*/

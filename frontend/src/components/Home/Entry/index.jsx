@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.scss';
 import {Button, Image} from "react-bootstrap";
 
@@ -43,9 +44,11 @@ const Entry = (props) => {
                 <div className={"button-container"}>
                     {demoButton()}
                     {codeButton()}
-                    <Button className={"entry-button"} href={`/projects/${props.id}`}>
+                    <Link to={`/projects/${props.id}`}>
+                    <Button className={"entry-button"}>
                         Learn More
                     </Button>
+                    </Link>
                 </div>
             </div>
         </div>

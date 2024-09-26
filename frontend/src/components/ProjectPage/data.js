@@ -76,7 +76,7 @@ let data = {
             media: [
                 {
                     type: 'image',
-                    src: 'https://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/001/396/000/datas/gallery.jpg',
+                    src: '/images/pedagog.jpg',
                     alt: 'Branding and logo for Pedagog'
                 }
             ]

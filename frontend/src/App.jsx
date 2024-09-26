@@ -2,7 +2,8 @@ import './App.css';
 import {
     BrowserRouter as Router,
     Routes,
-    Route, Navigate
+    Route, Navigate,
+    HashRouter
 } from "react-router-dom";
 import Navigation from "./components/Common/Navigation";
 import Footer from "./components/Common/Footer";
@@ -29,7 +30,7 @@ function App() {
     }, [])
 
   return (
-    <Router>
+    <HashRouter>
         <div className="App">
             <Navigation/>
             <Routes>
@@ -45,7 +46,7 @@ function App() {
             </Routes>
             <Footer/>
         </div>
-    </Router>
+    </HashRouter>
   );
 }
 
