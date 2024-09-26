@@ -84,13 +84,13 @@ let data = {
         opencv: {
             title: 'Computer Vision Project',
             description: 'We, as a team of 4 developers, created a Python program that can take images as imput to apply convolutions to them. Also, the programm opens a live preview with the camera of the device and the user can see the available convolutions applied to the video. The projects is also able to dectec faces and draw overlays in the live preview based on the face position. This project was developed using Python, OpenCV and DLib using a pretrained datased for the face recognition. The project took about a week to develop because it was created as part of a school project.',
-            github: 'https://github.com/SweetSofiMC/Convolution',
+            github: 'https://github.com/SofiaDParamo/Convolution',
             date: 'September 2020',
             skills: ["Python", "OpenCV", "DLib", "GitHub"],
             media: [
                 {
                     type: 'image',
-                    src: 'https://github.com/SweetSofiMC/Convolution/raw/master/Examples/ui.gif',
+                    src: 'https://github.com/SofiaDParamo/Convolution/raw/master/Examples/ui.gif',
                     alt: 'Project Demo animation'
                 }
             ]

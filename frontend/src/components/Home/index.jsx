@@ -53,8 +53,8 @@ let Home = () => {
                 <Entry
                     title={"Computer Vision Project"}
                     description={"Image convolution and face recognition project"}
-                    code={"https://github.com/SweetSofiMC/Convolution"}
-                    image={"https://github.com/SweetSofiMC/Convolution/raw/master/Examples/ui.gif"}
+                    code={"https://github.com/SofiaDParamo/Convolution"}
+                    image={"https://github.com/SofiaDParamo/Convolution/raw/master/Examples/ui.gif"}
                     id={"opencv"}
                 />
             </div>
