@@ -7,7 +7,7 @@ let data = {
         {text :  " a Líder del Mañana ", emoji: "✨"},
         {text :  " Mexican ", emoji: "🇲🇽"},
         {text :  " a daydreamer ", emoji: "💭"},
-        {text :  " Sofia ", emoji: "🌸"},
+        {text :  " Sofi ", emoji: "🌸"},
     ]
 }
 
