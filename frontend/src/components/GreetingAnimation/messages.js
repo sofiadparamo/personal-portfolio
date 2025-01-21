@@ -6,7 +6,6 @@ let data = {
         {text :  " an MLH Fellowship alumna ", emoji: "🎓"},
         {text :  " a Líder del Mañana ", emoji: "✨"},
         {text :  " Mexican ", emoji: "🇲🇽"},
-        {text :  " transgender ", emoji: "🏳️‍⚧️"},
         {text :  " a daydreamer ", emoji: "💭"},
         {text :  " Sofia ", emoji: "🌸"},
     ]
